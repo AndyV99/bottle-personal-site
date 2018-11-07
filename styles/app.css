@@ -1,0 +1,50 @@
+body {
+  background-color: #111214;
+  margin: 0; }
+
+.mdc-drawer {
+  background-color: #14213D; }
+  .mdc-drawer .mdc-list-divider {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-bottom-color: #A2ABBF;
+    opacity: 0.24; }
+  .mdc-drawer .mdc-drawer__title, .mdc-drawer .mdc-drawer__subtitle {
+    font-family: "Nova Square";
+    color: #D4E0F9; }
+  .mdc-drawer .mdc-drawer__title {
+    font-size: 26px; }
+  .mdc-drawer .mdc-drawer__subtitle {
+    font-size: 14px; }
+  .mdc-drawer .mdc-list-item {
+    color: #A2ABBF;
+    font-family: "Nova Square"; }
+    .mdc-drawer .mdc-list-item .mdc-list-item__graphic {
+      color: #A2ABBF; }
+  .mdc-drawer .mdc-list-item--activated {
+    font-size: 18px;
+    color: #FFA411; }
+    .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+      color: #FFA411; }
+
+.index-content {
+  position: absolute;
+  top: 32px;
+  left: calc(256px + 32px); }
+
+:not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::before, :not(.mdc-list--non-interactive) > :not(.mdc-list-item--disabled).mdc-list-item--activated::after {
+  background-color: #FFA411; }
+
+.mdc-typography {
+  color: #D4E0F9; }
+
+.mdc-typography--headline1 {
+  font-family: "Nova Square", cursive;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  opacity: 1; }
+
+.mdc-typography--headline2 {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  opacity: 0.85; }

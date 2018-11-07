@@ -1,0 +1,71 @@
+$pw-nav-bg-color: #14213D;
+$pw-inactive-color: #A2ABBF;
+$pw-active-color: #FFA411;
+$pw-text-color: #D4E0F9;
+$pw-page-bg-color: #111214;
+
+body {
+  background-color: $pw-page-bg-color;
+  margin: 0;
+}
+
+.mdc-drawer {
+  background-color: $pw-nav-bg-color;
+  .mdc-list-divider {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-bottom-color: $pw-inactive-color;
+    opacity: 0.24;
+  }
+  .mdc-drawer__title, .mdc-drawer__subtitle {
+    font-family: "Nova Square";
+    color: $pw-text-color;
+  }
+  .mdc-drawer__title {
+    font-size: 26px;
+  }
+  .mdc-drawer__subtitle {
+    font-size: 14px;
+  }
+  .mdc-list-item {
+    color: $pw-inactive-color;
+    font-family: "Nova Square";
+    .mdc-list-item__graphic {
+      color: $pw-inactive-color
+    }
+  }
+  .mdc-list-item--activated {
+    font-size: 18px;
+    color: $pw-active-color;
+    .mdc-list-item__graphic {
+      color: $pw-active-color;
+    }
+  }
+}
+
+.index-content {
+  position: absolute;
+  top: 32px;
+  left: calc(256px + 32px);
+}
+
+:not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item--activated::before, :not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item--activated::after {
+  background-color: $pw-active-color;
+}
+
+.mdc-typography {
+  color: $pw-text-color;
+}
+
+.mdc-typography--headline1 {
+  font-family: "Nova Square", cursive;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  opacity: 1;
+}
+
+.mdc-typography--headline2 {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  opacity: 0.85;
+}
